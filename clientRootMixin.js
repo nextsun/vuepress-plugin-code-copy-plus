@@ -20,10 +20,16 @@ export default {
                         backgroundTransition: backgroundTransition,
                         backgroundColor: backgroundColor,
                         successText: successText,
-                        staticIcon: staticIcon
+                        staticIcon: staticIcon,
+                        trimContent: trimContent
                     }
                     instance.options = { ...options }
-                    instance.code = el.innerText
+                    if(trimContent === true){
+                        instance.code = el.innerText.trim()
+                    }else{
+                        instance.code = el.innerText
+                    }
+                    
                     instance.parent = el
                     instance.$mount()
                     el.classList.add('code-copy-added')

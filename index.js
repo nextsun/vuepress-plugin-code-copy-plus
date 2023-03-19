@@ -8,7 +8,8 @@ module.exports = (options = {}, ctx) => ({
         backgroundColor: options.backgroundColor || '#0075b8',
         backgroundTransition: options.backgroundTransition !== false,
         successText: options.successText || 'Copied!',
-        staticIcon: options.staticIcon === true
+        staticIcon: options.staticIcon === true,
+        trimContent: options.trimContent === true
 
     },
     enhanceAppFiles: [path.resolve(__dirname, 'appFile.js')],

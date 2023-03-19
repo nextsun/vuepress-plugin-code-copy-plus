@@ -33,7 +33,8 @@ module.exports = {
         color: String,
         backgroundTransition: Boolean,
         backgroundColor: String,
-        successText: String
+        successText: String,
+        trimContent: Boolean
         }
     ]
   ]
@@ -89,3 +90,11 @@ This sets the text that displays when a user presses the copy button.
 -   Default: `false`
 
 Copy icon is only visible when hovering over code block or is always visible. 
+
+
+### trimContent
+
+-   Type: `Boolean`
+-   Default: `false`
+
+Should trim code context when copied

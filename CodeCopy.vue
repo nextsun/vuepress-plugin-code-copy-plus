@@ -32,7 +32,8 @@ export default {
             backgroundTransition: Boolean,
             backgroundColor: String,
             successText: String,
-            staticIcon: Boolean
+            staticIcon: Boolean,
+            trimContent: Boolean
         }
     },
     data() {
